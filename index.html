@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Household Monthly Budget Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Monthly Budget Planner</h1>
+
+    <section id="income">
+      <h2>Income</h2>
+      <table>
+        <thead>
+          <tr><th>Type</th><th>Projected</th><th>Actual</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Income 1</td><td><input type="number" id="incomeProj1" /></td><td><input type="number" id="incomeAct1" /></td></tr>
+          <tr><td>Extra Income</td><td><input type="number" id="incomeProj2" /></td><td><input type="number" id="incomeAct2" /></td></tr>
+        </tbody>
+      </table>
+      <p>Projected Total: <span id="incomeProjTotal">0</span></p>
+      <p>Actual Total: <span id="incomeActTotal">0</span></p>
+    </section>
+
+    <section id="expenses">
+      <h2>Expenses</h2>
+      <div id="categories"></div>
+    </section>
+
+    <section id="summary">
+      <h2>Summary</h2>
+      <p>Projected Balance: <span id="projBalance">0</span></p>
+      <p>Actual Balance: <span id="actBalance">0</span></p>
+      <p>Difference: <span id="balanceDiff">0</span></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
